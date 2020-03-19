@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Attestation COVID",
+    "description": "Un outil pour faciliter la génération des attestations COVID: attention, l'état ne semble pas forcément d'accord pour cette approche... donc c'est sans garanti (mais pour moi ça a fonctionné jusqu'à présent)",
+    "slug": "covid",
+    "privacy": "public",
+    "sdkVersion": "36.0.0",
+    "platforms": ["ios", "android", "web"],
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "fr.noce.covid",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "fr.noce.covid",
+      "versionCode": 1
+    }
+  }
+}
