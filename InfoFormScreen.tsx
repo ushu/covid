@@ -17,7 +17,6 @@ const InfoForm = () => {
     if (showDatePicker) {
       // quand on l'active, on scroll (pour l'iPhone 8 & co.)
       Keyboard.dismiss()
-      scrollViewRef.current?.scrollToEnd({ animated: true })
     }
   }, [showDatePicker])
 
@@ -26,10 +25,9 @@ const InfoForm = () => {
   const streetRef = useRef<Input>(null)
   const postCodeRef = useRef<Input>(null)
   const cityRef = useRef<Input>(null)
-  const scrollViewRef = useRef<ScrollView>(null)
 
   return (
-    <ScrollView style={styles.container} ref={scrollViewRef}>
+    <ScrollView style={styles.container}>
       <KeyboardAvoidingView
         behavior="position"
         enabled={Platform.OS === "ios"}
